@@ -1,0 +1,213 @@
+.homesection {
+    padding: 50px;
+    background-color: #FFFFFF;
+}
+.shortersection {
+    padding: 50px;
+    background-color: rgba(242, 240, 241, 1);
+}
+.sectionflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgbg {
+    width: 500px;
+    height: 700px;
+}
+.shorterdiv {
+    margin-bottom: 30px;
+
+    h1 {
+        @include more ();
+        margin-bottom: 30px;
+    }
+    p{
+        @include paragraph ();
+        margin-top: 20px;
+    }
+}
+.quality {
+    img {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 70px;
+    h1{
+font-family: "Poppins", sans-serif;
+font-size: 40px;
+font-weight: bold;
+line-height: 54px;
+text-align: left;
+
+}
+P{
+font-family: "Poppins", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+color: rgba(0, 0, 0, 0.6);
+}
+}
+
+.arrival {
+    padding: 50px;
+    letter-spacing: 2px;
+    h1{
+        @include sectionh1();
+    }
+    
+}
+.frames {
+        @include flex ();
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+.clipsection {
+    background-color: black;
+    display: flex;
+    padding:  50px ;
+    justify-content: space-around;
+}
+.Vector {
+    margin-top: 50px;
+    width: 1000px;
+    height: 1px;
+    margin:50px auto;
+    background-color: gray;
+}
+.suport {
+    padding: 60px;
+    margin: auto;
+width: 1239px;
+height: 866px;
+top: 2417px;
+border-radius: 40px;
+background-color: $sectioncolor2;
+
+    h1 {
+        @include sectionh1();
+    }
+}
+.photos {
+    @include flex ();
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.happy {
+    @include sectionh1();
+}
+.customerss  {
+    padding: 100px;
+    margin-bottom: 100px;
+
+}
+.customers {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.Sarah {
+    @include flex ();
+    gap: 20px;
+}
+.sarah {
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 240px;
+    padding: 32px;
+    img {
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+        opacity: 0.4;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+    .clipsection {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .imgbg {
+        width: 100%;
+        height: 100%;
+    }
+    .sectionflex{
+        flex-wrap: wrap;
+    }
+    .clipimg {
+        width: 100%;
+        height: 100%; 
+    }
+    .arrival {
+        h1{
+            font-size: 30px;
+        }
+    }
+    .quality {
+        div {
+            h1 {
+                font-size: 30px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    .Vector {
+        width: 100%;
+    }
+    .shorterdiv {
+        h1 {
+            font-size: 40px;
+        }
+    }
+    .suport{
+        width: 100%;
+        height: 100%;
+        h1 {
+            font-size: 30px;
+        }
+    }
+    .photos {
+        img {
+            width: 100%;
+    height: 100%;
+        }
+    }
+    .Sarah{
+        flex-wrap: wrap;
+        .sarah {
+            width: 100%;
+            height: 100%;
+            img {
+                width: 10%;
+                height: 10%;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+    .happy {
+        font-size: 25px;
+    }
+}
